@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>wadsbasement</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      height: 100%;
+      cursor: none;
+      font-family: sans-serif;
+      overflow: hidden;
+    }
+
+    .cursor-highlight {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      background: rgba(0, 200, 255, 0.3);
+      border: 2px solid rgba(0, 200, 255, 0.8);
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+      box-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
+    }
+
+.button-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* ✅ Center vertically */
+  gap: 10px;
+  overflow-y: auto;
+  padding: 20px;
+  z-index: 1;
+}
+
+
+
+    .go-home-button {
+      padding: 12px 24px;
+      background-color: rgba(0, 200, 255, 0.15);
+      border: 1px solid rgba(0, 200, 255, 0.7);
+      color: #00c8ff;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      width: fit-content;
+    }
+
+    .go-home-button:hover {
+      background-color: rgba(0, 200, 255, 0.25);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor-highlight" id="cursor"></div>
+  <div class="button-container">
+    <button class="go-home-button" onclick="location.href='./10-minutes-till-dawn/'">10-minutes-till-dawn</button>
+<button class="go-home-button" onclick="location.href='./1v1-lol/'">1v1-lol</button>
+<button class="go-home-button" onclick="location.href='./OfflineParadise/'">OfflineParadise</button>
+<button class="go-home-button" onclick="location.href='./adam-eve-2/'">adam-eve-2</button>
+<button class="go-home-button" onclick="location.href='./adam-eve/'">adam-eve</button>
+<button class="go-home-button" onclick="location.href='./adarkroom/'">adarkroom</button>
+<button class="go-home-button" onclick="location.href='./alienhominid/'">alienhominid</button>
+<button class="go-home-button" onclick="location.href='./angry-sharks/'">angry-sharks</button>
+<button class="go-home-button" onclick="location.href='./apple-shooter/'">apple-shooter</button>
+<button class="go-home-button" onclick="location.href='./arcane-archer/'">arcane-archer</button>
+<button class="go-home-button" onclick="location.href='./avalanche/'">avalanche</button>
+<button class="go-home-button" onclick="location.href='./awesome-tanks-2/'">awesome-tanks-2</button>
+<button class="go-home-button" onclick="location.href='./backrooms-2d/'">backrooms-2d</button>
+<button class="go-home-button" onclick="location.href='./backrooms/'">backrooms</button>
+<button class="go-home-button" onclick="location.href='./bacon-may-die/'">bacon-may-die</button>
+<button class="go-home-button" onclick="location.href='./blackknight/'">blackknight</button>
+<button class="go-home-button" onclick="location.href='./blumgi-slime/'">blumgi-slime</button>
+<button class="go-home-button" onclick="location.href='./bob-the-robber-4/'">bob-the-robber-4</button>
+<button class="go-home-button" onclick="location.href='./bobtherobber2/'">bobtherobber2</button>
+<button class="go-home-button" onclick="location.href='./bomb-it-7/'">bomb-it-7</button>
+<button class="go-home-button" onclick="location.href='./boxel-rebound/'">boxel-rebound</button>
+<button class="go-home-button" onclick="location.href='./bullet-force/'">bullet-force</button>
+<button class="go-home-button" onclick="location.href='./burrito-bison-revenge/'">burrito-bison-revenge</button>
+<button class="go-home-button" onclick="location.href='./champion-island/'">champion-island</button>
+<button class="go-home-button" onclick="location.href='./championarcher/'">championarcher</button>
+<button class="go-home-button" onclick="location.href='./craftmine/'">craftmine</button>
+<button class="go-home-button" onclick="location.href='./crazy-tunnel-3d/'">crazy-tunnel-3d</button>
+<button class="go-home-button" onclick="location.href='./creativekillchamber/'">creativekillchamber</button>
+<button class="go-home-button" onclick="location.href='./cubefield/'">cubefield</button>
+<button class="go-home-button" onclick="location.href='./dante/'">dante</button>
+<button class="go-home-button" onclick="location.href='./dead-again/'">dead-again</button>
+<button class="go-home-button" onclick="location.href='./death-run-3d/'">death-run-3d</button>
+<button class="go-home-button" onclick="location.href='./defend-the-tank/'">defend-the-tank</button>
+<button class="go-home-button" onclick="location.href='./dodge/'">dodge</button>
+<button class="go-home-button" onclick="location.href='./down-the-hill/'">down-the-hill</button>
+<button class="go-home-button" onclick="location.href='./dragon-vs-bricks/'">dragon-vs-bricks</button>
+<button class="go-home-button" onclick="location.href='./eagle-ride/'">eagle-ride</button>
+<button class="go-home-button" onclick="location.href='./electron-dash/'">electron-dash</button>
+<button class="go-home-button" onclick="location.href='./endless-tunnel/'">endless-tunnel</button>
+<button class="go-home-button" onclick="location.href='./endlesswar3/'">endlesswar3</button>
+<button class="go-home-button" onclick="location.href='./evil-glitch/'">evil-glitch</button>
+<button class="go-home-button" onclick="location.href='./fancy-pants-2/'">fancy-pants-2</button>
+<button class="go-home-button" onclick="location.href='./fancy-pants-3/'">fancy-pants-3</button>
+<button class="go-home-button" onclick="location.href='./fancypantsadventures/'">fancypantsadventures</button>
+<button class="go-home-button" onclick="location.href='./fireboywatergirlforesttemple/'">fireboywatergirlforesttemple</button>
+<button class="go-home-button" onclick="location.href='./fnaf/'">fnaf</button>
+<button class="go-home-button" onclick="location.href='./fnaw/'">fnaw</button>
+<button class="go-home-button" onclick="location.href='./football-run/'">football-run</button>
+<button class="go-home-button" onclick="location.href='./froggys-battle/'">froggys-battle</button>
+<button class="go-home-button" onclick="location.href='./frying-nemo/'">frying-nemo</button>
+<button class="go-home-button" onclick="location.href='./funnyshooter2/'">funnyshooter2</button>
+<button class="go-home-button" onclick="location.href='./galaga/'">galaga</button>
+<button class="go-home-button" onclick="location.href='./generic-fishing-game/'">generic-fishing-game</button>
+<button class="go-home-button" onclick="location.href='./geodash/'">geodash</button>
+<button class="go-home-button" onclick="location.href='./geometry-dash/'">geometry-dash</button>
+<button class="go-home-button" onclick="location.href='./getaway-shootout/'">getaway-shootout</button>
+<button class="go-home-button" onclick="location.href='./gimme-the-airpod/'">gimme-the-airpod</button>
+<button class="go-home-button" onclick="location.href='./gladihoppers/'">gladihoppers</button>
+<button class="go-home-button" onclick="location.href='./glitch-dash/'">glitch-dash</button>
+<button class="go-home-button" onclick="location.href='./gobdun/'">gobdun</button>
+<button class="go-home-button" onclick="location.href='./goodnight/'">goodnight</button>
+<button class="go-home-button" onclick="location.href='./groovy-ski/'">groovy-ski</button>
+<button class="go-home-button" onclick="location.href='./gswitch-2/'">gswitch-2</button>
+<button class="go-home-button" onclick="location.href='./gswitch-3/'">gswitch-3</button>
+<button class="go-home-button" onclick="location.href='./gswitch/'">gswitch</button>
+<button class="go-home-button" onclick="location.href='./gun-mayhem-2/'">gun-mayhem-2</button>
+<button class="go-home-button" onclick="location.href='./gun-mayhem-redux/'">gun-mayhem-redux</button>
+<button class="go-home-button" onclick="location.href='./gun-mayhem/'">gun-mayhem</button>
+<button class="go-home-button" onclick="location.href='./gunblood/'">gunblood</button>
+<button class="go-home-button" onclick="location.href='./happy-hop/'">happy-hop</button>
+<button class="go-home-button" onclick="location.href='./hba/'">hba</button>
+<button class="go-home-button" onclick="location.href='./helicopter/'">helicopter</button>
+<button class="go-home-button" onclick="location.href='./hide-and-smash/'">hide-and-smash</button>
+<button class="go-home-button" onclick="location.href='./hole-io/'">hole-io</button>
+<button class="go-home-button" onclick="location.href='./hungry-lamu/'">hungry-lamu</button>
+<button class="go-home-button" onclick="location.href='./infinite-soccer/'">infinite-soccer</button>
+<button class="go-home-button" onclick="location.href='./iron-snout/'">iron-snout</button>
+<button class="go-home-button" onclick="location.href='./jetpack-joyride/'">jetpack-joyride</button>
+<button class="go-home-button" onclick="location.href='./just-fall/'">just-fall</button>
+<button class="go-home-button" onclick="location.href='./just-one-boss/'">just-one-boss</button>
+<button class="go-home-button" onclick="location.href='./kitchen-gun-game/'">kitchen-gun-game</button>
+<button class="go-home-button" onclick="location.href='./knife-master/'">knife-master</button>
+<button class="go-home-button" onclick="location.href='./mario-bros/'">mario-bros</button>
+<button class="go-home-button" onclick="location.href='./mario/'">mario</button>
+<button class="go-home-button" onclick="location.href='./matrixrampage/'">matrixrampage</button>
+<button class="go-home-button" onclick="location.href='./mineblocks/'">mineblocks</button>
+<button class="go-home-button" onclick="location.href='./minecraft-15/'">minecraft-15</button>
+<button class="go-home-button" onclick="location.href='./minecraft-18/'">minecraft-18</button>
+<button class="go-home-button" onclick="location.href='./minecraft-classic/'">minecraft-classic</button>
+<button class="go-home-button" onclick="location.href='./minecraftbeta/'">minecraftbeta</button>
+<button class="go-home-button" onclick="location.href='./missiles/'">missiles</button>
+<button class="go-home-button" onclick="location.href='./motox3m-pool/'">motox3m-pool</button>
+<button class="go-home-button" onclick="location.href='./motox3m-spooky/'">motox3m-spooky</button>
+<button class="go-home-button" onclick="location.href='./motox3m-winter/'">motox3m-winter</button>
+<button class="go-home-button" onclick="location.href='./motox3m/'">motox3m</button>
+<button class="go-home-button" onclick="location.href='./motox3m2/'">motox3m2</button>
+<button class="go-home-button" onclick="location.href='./mutazone/'">mutazone</button>
+<button class="go-home-button" onclick="location.href='./n-gon/'">n-gon</button>
+<button class="go-home-button" onclick="location.href='./ninjavsevilcorp/'">ninjavsevilcorp</button>
+<button class="go-home-button" onclick="location.href='./ns-shaft/'">ns-shaft</button>
+<button class="go-home-button" onclick="location.href='./ohio-fortnite/'">ohio-fortnite</button>
+<button class="go-home-button" onclick="location.href='./om-bounce/'">om-bounce</button>
+<button class="go-home-button" onclick="location.href='./ovo-2/'">ovo-2</button>
+<button class="go-home-button" onclick="location.href='./ovo-dimensions/'">ovo-dimensions</button>
+<button class="go-home-button" onclick="location.href='./ovo/'">ovo</button>
+<button class="go-home-button" onclick="location.href='./pacman/'">pacman</button>
+<button class="go-home-button" onclick="location.href='./paper-3/'">paper-3</button>
+<button class="go-home-button" onclick="location.href='./paper-minecraft/'">paper-minecraft</button>
+<button class="go-home-button" onclick="location.href='./paperio2/'">paperio2</button>
+<button class="go-home-button" onclick="location.href='./papery-planes/'">papery-planes</button>
+<button class="go-home-button" onclick="location.href='./pcraft/'">pcraft</button>
+<button class="go-home-button" onclick="location.href='./pixel-gun-survival/'">pixel-gun-survival</button>
+<button class="go-home-button" onclick="location.href='./pizza-tower/'">pizza-tower</button>
+<button class="go-home-button" onclick="location.href='./pokemon-emerald-2/'">pokemon-emerald-2</button>
+<button class="go-home-button" onclick="location.href='./pokemon-emerald/'">pokemon-emerald</button>
+<button class="go-home-button" onclick="location.href='./pokemon-firered/'">pokemon-firered</button>
+<button class="go-home-button" onclick="location.href='./polybranch/'">polybranch</button>
+<button class="go-home-button" onclick="location.href='./protektor/'">protektor</button>
+<button class="go-home-button" onclick="location.href='./rolling-forests/'">rolling-forests</button>
+<button class="go-home-button" onclick="location.href='./rolly-vortex/'">rolly-vortex</button>
+<button class="go-home-button" onclick="location.href='./rooftop-snipers/'">rooftop-snipers</button>
+<button class="go-home-button" onclick="location.href='./run-2/'">run-2</button>
+<button class="go-home-button" onclick="location.href='./run-3-space/'">run-3-space</button>
+<button class="go-home-button" onclick="location.href='./rusher-crusher/'">rusher-crusher</button>
+<button class="go-home-button" onclick="location.href='./santy-is-home/'">santy-is-home</button>
+<button class="go-home-button" onclick="location.href='./shuttledeck/'">shuttledeck</button>
+<button class="go-home-button" onclick="location.href='./skibidi-strike/'">skibidi-strike</button>
+<button class="go-home-button" onclick="location.href='./skywire/'">skywire</button>
+<button class="go-home-button" onclick="location.href='./sleepingbeauty/'">sleepingbeauty</button>
+<button class="go-home-button" onclick="location.href='./sling-tomb/'">sling-tomb</button>
+<button class="go-home-button" onclick="location.href='./slope-2/'">slope-2</button>
+<button class="go-home-button" onclick="location.href='./slope-ball/'">slope-ball</button>
+<button class="go-home-button" onclick="location.href='./slope/'">slope</button>
+<button class="go-home-button" onclick="location.href='./sm64/'">sm64</button>
+<button class="go-home-button" onclick="location.href='./smokingbarrels/'">smokingbarrels</button>
+<button class="go-home-button" onclick="location.href='./snow-ride/'">snow-ride</button>
+<button class="go-home-button" onclick="location.href='./snow-rider-3d/'">snow-rider-3d</button>
+<button class="go-home-button" onclick="location.href='./snowbattle/'">snowbattle</button>
+<button class="go-home-button" onclick="location.href='./soldier-legend/'">soldier-legend</button>
+<button class="go-home-button" onclick="location.href='./spacegarden/'">spacegarden</button>
+<button class="go-home-button" onclick="location.href='./stack-bump-3d/'">stack-bump-3d</button>
+<button class="go-home-button" onclick="location.href='./stack/'">stack</button>
+<button class="go-home-button" onclick="location.href='./station-141/'">station-141</button>
+<button class="go-home-button" onclick="location.href='./stick-archers/'">stick-archers</button>
+<button class="go-home-button" onclick="location.href='./stick-duel-battle/'">stick-duel-battle</button>
+<button class="go-home-button" onclick="location.href='./stick-merge/'">stick-merge</button>
+<button class="go-home-button" onclick="location.href='./stickman-boost/'">stickman-boost</button>
+<button class="go-home-button" onclick="location.href='./subway-surfers-ny/'">subway-surfers-ny</button>
+<button class="go-home-button" onclick="location.href='./subway-surfers/'">subway-surfers</button>
+<button class="go-home-button" onclick="location.href='./super-mario-wonder/'">super-mario-wonder</button>
+<button class="go-home-button" onclick="location.href='./superhot/'">superhot</button>
+<button class="go-home-button" onclick="location.href='./supermarioconstruct/'">supermarioconstruct</button>
+<button class="go-home-button" onclick="location.href='./synesthesia/'">synesthesia</button>
+<button class="go-home-button" onclick="location.href='./tactical-weapon-pack-2/'">tactical-weapon-pack-2</button>
+<button class="go-home-button" onclick="location.href='./tacticalassasin2/'">tacticalassasin2</button>
+<button class="go-home-button" onclick="location.href='./tag/'">tag</button>
+<button class="go-home-button" onclick="location.href='./tank-trouble-2/'">tank-trouble-2</button>
+<button class="go-home-button" onclick="location.href='./tanuki-sunset/'">tanuki-sunset</button>
+<button class="go-home-button" onclick="location.href='./tap-tap-shots/'">tap-tap-shots</button>
+<button class="go-home-button" onclick="location.href='./temple-run-2/'">temple-run-2</button>
+<button class="go-home-button" onclick="location.href='./terraira/'">terraira</button>
+<button class="go-home-button" onclick="location.href='./thisistheonlylevel/'">thisistheonlylevel</button>
+<button class="go-home-button" onclick="location.href='./tiny-fishing/'">tiny-fishing</button>
+<button class="go-home-button" onclick="location.href='./tosstheturtle/'">tosstheturtle</button>
+<button class="go-home-button" onclick="location.href='./traffic-control/'">traffic-control</button>
+<button class="go-home-button" onclick="location.href='./trimps/'">trimps</button>
+<button class="go-home-button" onclick="location.href='./tube-jumpers/'">tube-jumpers</button>
+<button class="go-home-button" onclick="location.href='./tunnel-rush-2/'">tunnel-rush-2</button>
+<button class="go-home-button" onclick="location.href='./tunnel-rush/'">tunnel-rush</button>
+<button class="go-home-button" onclick="location.href='./turn-turn/'">turn-turn</button>
+<button class="go-home-button" onclick="location.href='./vex3/'">vex3</button>
+<button class="go-home-button" onclick="location.href='./vex4/'">vex4</button>
+<button class="go-home-button" onclick="location.href='./vex5/'">vex5</button>
+<button class="go-home-button" onclick="location.href='./vex6/'">vex6</button>
+<button class="go-home-button" onclick="location.href='./vex7/'">vex7</button>
+<button class="go-home-button" onclick="location.href='./vex8/'">vex8</button>
+<button class="go-home-button" onclick="location.href='./wolf3d/'">wolf3d</button>
+<button class="go-home-button" onclick="location.href='./worlds-hardest-game-2/'">worlds-hardest-game-2</button>
+<button class="go-home-button" onclick="location.href='./worlds-hardest-game/'">worlds-hardest-game</button>
+
+  </div>
+
+  <script>
+    const cursor = document.getElementById('cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.top = `${e.clientY}px`;
+      cursor.style.left = `${e.clientX}px`;
+    });
+  </script>
+</body>
+</html>
